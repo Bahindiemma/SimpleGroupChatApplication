@@ -57,7 +57,7 @@ public class Client implements Runnable {
 				BufferedReader inReader = new BufferedReader(new InputStreamReader(System.in));
 				while (!done) {
 					String message = inReader.readLine();
-					if (message.equals("/quit")) {
+					if (message.equals("quit")) {
 						inReader.close();
 						shutdown();
 						break; // Add break statement to exit the loop

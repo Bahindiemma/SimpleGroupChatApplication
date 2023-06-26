@@ -106,7 +106,7 @@ public class Server implements Runnable {
 									} else {
 										out.println("No nickname was provided!");
 									}
-								} else if (message.startsWith("/quit")) {
+								} else if (message.startsWith("quit")) {
 									broadcast(nickname + " left the chat!");
 									removeConnection(this);
 									shutdown();
